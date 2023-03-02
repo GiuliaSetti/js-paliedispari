@@ -106,7 +106,15 @@ buttonCheck.addEventListener("click", function(){
 
 // ESERCIZIO 2
 
+const playButton = document.getElementById("test_button");
 
+let userNumber = Number(document.getElementById("user_number").value);
+
+let finalRisult = document.getElementById("risultato_finale");
+
+// playButton.addEventListener{
+    
+// }
 
 
 
@@ -150,6 +158,13 @@ function reverseString(word){
 // ESERCIZIO 2
 
 // numero casuale
+
+function randomNumberGenerator(min, max){
+
+    let randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+
+    return randomNumber;
+}
 
 
 // pari o dispari
