@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    padding: 4rem;
+}
+
+.container h1, 
+.container h2,
+.container hr{
+    margin: 2rem 0;
+}
+
+.container input{
+    padding: 0.5rem;
+
+    border-radius: 30px;
+    border: gray 1px solid;
+}
+
+.container button{
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: gray 1px solid;
+}

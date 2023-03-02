@@ -4,58 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Parola Palindroma E Pari e Dispari</title>
 </head>
-<body>
+<body class="debug">
 
-    <h1>Esercitazione Funzioni</h1>
-
-    <div class="parola_palindroma">
-
-        <h2>Controlla se la parola è Palindroma</h2>
+    <div class="container">
         
-        <input type="text" id="user_word" placeholder="scegli una parola">
-        <button id="check_button">Controlla</button>
-
-        <div id="empty_word"></div>
-
-        <div id="word_result"></div>
-
-
-
-    </div>
-
-
-    <hr>
-
-
-    <div class="pari_dispari">
-
-        <h2>Pari o Dispari?</h2>
-
-        <div id="user_choice">
-
-            <select id="choice_option">
-
-                <option value="Pari">Pari</option>
-                <option value="Dispari">Dispari</option>
+        <h1>Esercitazione Funzioni</h1>
+        
+            <div class="parola_palindroma">
+        
+                <h2>Controlla se la parola è Palindroma</h2>
                 
-            </select>
-
-            <label for="user_number">Inserisci un numero da 1 a 5</label>
-
-            <input type="number" placeholder="inserisci un numero" id="user_number">
-
-            <button id="test_button">Gioca</button>
-
-            <div id="risultato_finale"></div>
-        </div>
-
-
-
-
+                <input type="text" id="user_word" placeholder="scegli una parola">
+                <button id="check_button">Controlla</button>
+        
+                <div id="empty_word"></div>
+        
+                <div id="word_result"></div>
+        
+        
+        
+            </div>
+        
+        
+            <hr>
+        
+        
+            <div class="pari_dispari">
+        
+                <h2>Pari o Dispari?</h2>
+        
+                <div id="user_choice">
+        
+                    <select id="choice_option">
+        
+                        <option value="Pari">Pari</option>
+                        <option value="Dispari">Dispari</option>
+                        
+                    </select>
+        
+                    <label for="user_number">Inserisci un numero da 1 a 5</label>
+        
+                    <input type="number" placeholder="inserisci un numero" id="user_number">
+        
+                    <button id="test_button">Gioca</button>
+        
+                    <div id="risultato_finale"></div>
+                </div>
+        
+        
+        
+        
+        
+            </div>
 
     </div>
+
+ 
 
 
 
