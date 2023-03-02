@@ -29,6 +29,10 @@ const userWord = document.getElementById("user_word");
 // console.log(userWord, buttonCheck);
 
 
+let wordResult = document.getElementById("word_result");
+
+let emptyWordAlert = document.getElementById("empty_word");
+
 // al Click del bottone
 buttonCheck.addEventListener("click", function(){
     
@@ -36,20 +40,34 @@ buttonCheck.addEventListener("click", function(){
 
     const drow = reverseString(word);
 
+
     // test
 
     console.log(word, drow);
 
-    if (word == drow){
-        console.log("la parola è palindroma");
+    if (word == ""){
+
+        emptyWordAlert.innerHTML = "Devi inserire la parola.";
+
     } else {
-        console.log("la parola non è palindroma");
+
+        emptyWordAlert.style.display = "none";
+
+        if (word == drow){
+            console.log("la parola è palindroma");
+    
+    
+            wordResult.innerHTML = "La parola è palindroma";
+    
+        } else {
+    
+            console.log("la parola non è palindroma");
+    
+            wordResult.innerHTML = "la parola non è palindroma";
+    
+        }
+
     }
-
-  
-
-  
-
 
 });
 
