@@ -2,8 +2,6 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-
-
 /* 
 - trascrivo gli elementi HTML in JS.
 
@@ -17,6 +15,39 @@ al CLICK del bottone:
         ° stampo in pagina che la parola non è palindroma. 
 
 */
+
+
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+
+/* 
+- chiedo all'utente di scegliere un numero che vada da 1 a 5.
+
+- chiedo se vuole scegliere pari o dispari.
+
+- creo una funzione che mi permetta di generare un numero random da 1 a 5.
+    - il pc sceglie un numero random da 1 a 5.
+
+- creo una funzione che mi permetta di definire se un numero è pari o dispari.
+
+
+- Sommo i numeri scelti dall'utente e quello random del pc
+
+? SE la somma (data da scelta user + scelta pc) è uguale alla scelta (pari/dispari) dell'utente 
+        ° comunico all'utente che ha vinto
+:ALTRIMENTI se la somma è differente dalla scelta 
+        ° comunico all'utente che ha vinto
+    
+
+*/
+
+
+
 
 const buttonCheck = document.getElementById("check_button");
 
@@ -72,7 +103,35 @@ buttonCheck.addEventListener("click", function(){
 });
 
 
+
+// ESERCIZIO 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // creo la funzione 
+
+// ESERCIZIO 1
+
+// parola palindroma
 
 function reverseString(word){
 
@@ -87,4 +146,11 @@ function reverseString(word){
 
 }
 
+
+// ESERCIZIO 2
+
+// numero casuale
+
+
+// pari o dispari
 
