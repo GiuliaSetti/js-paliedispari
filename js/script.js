@@ -126,13 +126,26 @@ playButton.addEventListener("click", function(){
 
     console.log(userNumber + cpuNumber);
 
-    if (isEverOrOdd(userNumber + cpuNumber) == userGame){
+    // test:  se il numero è maggiore o uguale a 1 e minore o uguale a 5 allora esegui l'altra condizione. 
+
+    if (userNumber >=1 && userNumber <= 5){
+
+        if (isEverOrOdd(userNumber + cpuNumber) == userGame){
         
-        finalRisult.innerHTML = "Hai vinto";
+            finalRisult.innerHTML = "Hai vinto";
+            
+        } else {
+    
+            finalRisult.innerHTML = "Hai perso";
+        }
+    
         
     } else {
 
-        finalRisult.innerHTML = "Hai perso";
+        // se una qualsiasi delle due è falsa allora: 
+        finalRisult.innerHTML = "Deve essere un numero da 1 a 5."
+
+
     }
 
 
