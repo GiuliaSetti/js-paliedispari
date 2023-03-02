@@ -34,6 +34,20 @@ buttonCheck.addEventListener("click", function(){
     
     const word = userWord.value;
 
+    const drow = reverseString(word);
+
+    // test
+
+    console.log(word, drow);
+
+    if (word == drow){
+        console.log("la parola è palindroma");
+    } else {
+        console.log("la parola non è palindroma");
+    }
+
+  
+
   
 
 
