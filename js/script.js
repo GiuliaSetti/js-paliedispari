@@ -31,13 +31,28 @@ const userWord = document.getElementById("user_word");
 
 // al Click del bottone
 buttonCheck.addEventListener("click", function(){
+    
     const word = userWord.value;
 
-    // test
+  
 
-    console.log(word);
 
 });
 
 
 // creo la funzione 
+
+function reverseString(word){
+
+    let reversedWord = ""; 
+
+    for (let i = word.length - 1; i >= 0; i--) {
+            reversedWord += word[i];
+    }
+
+    return reversedWord;
+    
+
+}
+
+
