@@ -17,3 +17,27 @@ al CLICK del bottone:
         ° stampo in pagina che la parola non è palindroma. 
 
 */
+
+const buttonCheck = document.getElementById("check_button");
+
+
+// chiedo all'utente una parola
+
+const userWord = document.getElementById("user_word");
+
+// test
+// console.log(userWord, buttonCheck);
+
+
+// al Click del bottone
+buttonCheck.addEventListener("click", function(){
+    const word = userWord.value;
+
+    // test
+
+    console.log(word);
+
+});
+
+
+// creo la funzione 
