@@ -169,3 +169,13 @@ function randomNumberGenerator(min, max){
 
 // pari o dispari
 
+
+function isEverOrOdd(somma){
+
+    if(somma % 2 == 0){
+        return "is even";
+    } else {
+        return "is odd";
+    }
+
+}
