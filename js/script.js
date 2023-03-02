@@ -35,8 +35,7 @@ al CLICK del bottone:
 
 - creo una funzione che mi permetta di definire se un numero è pari o dispari.
 
-
-- Sommo i numeri scelti dall'utente e quello random del pc
+al click del bottone:
 
 ? SE la somma (data da scelta user + scelta pc) è uguale alla scelta (pari/dispari) dell'utente 
         ° comunico all'utente che ha vinto
@@ -108,13 +107,37 @@ buttonCheck.addEventListener("click", function(){
 
 const playButton = document.getElementById("test_button");
 
-let userNumber = Number(document.getElementById("user_number").value);
 
-let finalRisult = document.getElementById("risultato_finale");
 
-// playButton.addEventListener{
+
+playButton.addEventListener("click", function(){
+
+    let userGame = document.getElementById("choice_option").value;
     
-// }
+    let finalRisult = document.getElementById("risultato_finale");
+    
+    let userNumber = Number(document.getElementById("user_number").value);
+
+
+    let cpuNumber = Number(randomNumberGenerator(1,5));
+
+    // test
+    console.log(cpuNumber, userNumber, userGame);
+
+    console.log(userNumber + cpuNumber);
+
+    if (isEverOrOdd(userNumber + cpuNumber) == userGame){
+        
+        finalRisult.innerHTML = "Hai vinto";
+        
+    } else {
+
+        finalRisult.innerHTML = "Hai perso";
+    }
+
+
+    
+ });
 
 
 
@@ -173,9 +196,12 @@ function randomNumberGenerator(min, max){
 function isEverOrOdd(somma){
 
     if(somma % 2 == 0){
-        return "is even";
+
+        return "Pari";
+
     } else {
-        return "is odd";
+
+        return "Dispari";
     }
 
 }
